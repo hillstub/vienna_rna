@@ -42,7 +42,8 @@ INCS_Debug := \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/src \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/uv/include \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/v8/include \
-	-I/usr/local/include/ViennaRNA
+	-I/usr/local/include/ViennaRNA \
+	-I/usr/include/ViennaRNA
 
 DEFS_Release := \
 	'-D_DARWIN_USE_64_BIT_INODE=1' \
@@ -82,7 +83,8 @@ INCS_Release := \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/src \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/uv/include \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/v8/include \
-	-I/usr/local/include/ViennaRNA
+	-I/usr/local/include/ViennaRNA \
+	-I/usr/include/ViennaRNA
 
 OBJS := \
 	$(obj).target/$(TARGET)/vienna_rna.o
