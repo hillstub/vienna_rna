@@ -4,11 +4,11 @@
       "target_name": "vienna_rna",
       "sources": [ "vienna_rna.cpp" ],
       'include_dirs': [
-		  '/Users/HMvanRossum/Documents/Programming/ViennaRNA-2.1.8/H/',
+		  '/usr/include/ViennaRNA/',
 		],
 
       'libraries': [
-		  '/Users/HMvanRossum/Documents/Programming/ViennaRNA-2.1.8/lib/libRNA.a'
+		  '/usr/lib/libRNA.a'
 	  ]
     }
   ]
