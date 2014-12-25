@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <string.h>
 #include <node.h>
 #undef B0
 namespace rnafold{
