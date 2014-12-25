@@ -1,34 +1,39 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'build', '.' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 info build /Users/HMvanRossum/Documents/Programming/vienna_rna
-5 info preinstall vienna_rna@1.0.0
-6 verbose linkStuff [ false,
-6 verbose linkStuff   false,
-6 verbose linkStuff   false,
-6 verbose linkStuff   '/Users/HMvanRossum/Documents/Programming' ]
-7 info linkStuff vienna_rna@1.0.0
-8 verbose linkBins vienna_rna@1.0.0
-9 verbose linkMans vienna_rna@1.0.0
-10 verbose rebuildBundles vienna_rna@1.0.0
-11 info install vienna_rna@1.0.0
-12 verbose unsafe-perm in lifecycle true
-13 info vienna_rna@1.0.0 Failed to exec install script
-14 error vienna_rna@1.0.0 install: `node-gyp rebuild`
-14 error Exit status 1
-15 error Failed at the vienna_rna@1.0.0 install script.
-15 error This is most likely a problem with the vienna_rna package,
-15 error not with npm itself.
-15 error Tell the author that this fails on your system:
-15 error     node-gyp rebuild
-15 error You can get their info via:
-15 error     npm owner ls vienna_rna
-15 error There is likely additional logging output above.
-16 error System Darwin 14.0.0
-17 error command "node" "/usr/local/bin/npm" "build" "."
-18 error cwd /Users/HMvanRossum/Documents/Programming/vienna_rna
-19 error node -v v0.10.32
-20 error npm -v 1.4.28
-21 error code ELIFECYCLE
-22 verbose exit [ 1, true ]
+4 warn package.json vienna_rna@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/HMvanRossum/Documents/Programming/vienna_rna', [] ]
+7 info preinstall vienna_rna@1.0.0
+8 verbose readDependencies using package.json deps
+9 silly resolved []
+10 info build /Users/HMvanRossum/Documents/Programming/vienna_rna
+11 verbose linkStuff [ false,
+11 verbose linkStuff   false,
+11 verbose linkStuff   false,
+11 verbose linkStuff   '/Users/HMvanRossum/Documents/Programming' ]
+12 info linkStuff vienna_rna@1.0.0
+13 verbose linkBins vienna_rna@1.0.0
+14 verbose linkMans vienna_rna@1.0.0
+15 verbose rebuildBundles vienna_rna@1.0.0
+16 info install vienna_rna@1.0.0
+17 verbose unsafe-perm in lifecycle true
+18 info vienna_rna@1.0.0 Failed to exec install script
+19 error vienna_rna@1.0.0 install: `echo "pwd;cd ./libs/ViennaRNA-2.1.8 && ./configure && make;cd ../..;";pwd;echo "boe";node-gyp rebuild`
+19 error Exit status 1
+20 error Failed at the vienna_rna@1.0.0 install script.
+20 error This is most likely a problem with the vienna_rna package,
+20 error not with npm itself.
+20 error Tell the author that this fails on your system:
+20 error     echo "pwd;cd ./libs/ViennaRNA-2.1.8 && ./configure && make;cd ../..;";pwd;echo "boe";node-gyp rebuild
+20 error You can get their info via:
+20 error     npm owner ls vienna_rna
+20 error There is likely additional logging output above.
+21 error System Darwin 14.0.0
+22 error command "node" "/usr/local/bin/npm" "install"
+23 error cwd /Users/HMvanRossum/Documents/Programming/vienna_rna
+24 error node -v v0.10.32
+25 error npm -v 1.4.28
+26 error code ELIFECYCLE
+27 verbose exit [ 1, true ]

@@ -4,12 +4,11 @@
       "target_name": "vienna_rna",
       "sources": [ "vienna_rna.cpp" ],
       'include_dirs': [
-		  '/usr/local/include/ViennaRNA/',
-      '/usr/include/ViennaRNA/',
+		  '<(module_root_dir)/libs/ViennaRNA/H/',
 		],
 
       'libraries': [
-		  '/usr/lib/libRNA.a'
+		  '<(module_root_dir)/libs/ViennaRNA/lib/libRNA.a'
 	  ]
     }
   ]

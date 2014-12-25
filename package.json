@@ -1,5 +1,8 @@
 {
     "name": "vienna_rna",
     "version": "1.0.0",
-    "main": "./build/Release/vienna_rna"
+    "main": "./build/Release/vienna_rna",
+    "scripts":{
+    	"install": "pwd;cd ./libs/ViennaRNA-2.1.8 && ./configure && make;cd ../..;pwd;echo \"boe\";node-gyp rebuild"
+    }
 }

@@ -42,8 +42,7 @@ INCS_Debug := \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/src \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/uv/include \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/v8/include \
-	-I/usr/local/include/ViennaRNA \
-	-I/usr/include/ViennaRNA
+	-I/Users/HMvanRossum/Documents/Programming/vienna_rna/libs/ViennaRNA/H
 
 DEFS_Release := \
 	'-D_DARWIN_USE_64_BIT_INODE=1' \
@@ -83,8 +82,7 @@ INCS_Release := \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/src \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/uv/include \
 	-I/Users/HMvanRossum/.node-gyp/0.10.32/deps/v8/include \
-	-I/usr/local/include/ViennaRNA \
-	-I/usr/include/ViennaRNA
+	-I/Users/HMvanRossum/Documents/Programming/vienna_rna/libs/ViennaRNA/H
 
 OBJS := \
 	$(obj).target/$(TARGET)/vienna_rna.o
@@ -135,7 +133,7 @@ LIBTOOLFLAGS_Release := \
 
 LIBS := \
 	-undefined dynamic_lookup \
-	/usr/lib/libRNA.a
+	/Users/HMvanRossum/Documents/Programming/vienna_rna/libs/ViennaRNA/lib/libRNA.a
 
 $(builddir)/vienna_rna.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
 $(builddir)/vienna_rna.node: LIBS := $(LIBS)
