@@ -1,6 +1,11 @@
 #include <cstdlib>
 #include <string.h>
 #include <node.h>
+
+#ifdef _OPENMP
+#include <omp.h>
+#endif
+
 #undef B0
 namespace rnafold{
   extern "C"
