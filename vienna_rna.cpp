@@ -2,16 +2,15 @@
 #include <string.h>
 #include <node.h>
 
-#ifdef _OPENMP
-#include <omp.h>
-#endif
 
-#undef _OPENMP
 
 #undef B0
 namespace rnafold{
   extern "C"
   {
+        #ifdef _OPENMP
+        #include <omp.h>
+        #endif
         #include "fold.h"
         #include "part_func.h"
         #include "fold_vars.h"
