@@ -6,6 +6,8 @@
 #include <omp.h>
 #endif
 
+#undef _OPENMP
+
 #undef B0
 namespace rnafold{
   extern "C"
