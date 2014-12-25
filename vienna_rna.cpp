@@ -8,11 +8,11 @@
 namespace rnafold{
   extern "C"
   {
-        #ifdef _OPENMP
-        #include <omp.h>
-        #endif
+        #undef _OPENMP
         #include "fold.h"
+        #undef _OPENMP
         #include "part_func.h"
+        #undef _OPENMP
         #include "fold_vars.h"
         #include "PS_dot.h"
         #include "utils.h"
