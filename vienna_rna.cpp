@@ -1,5 +1,5 @@
 #include <node.h>
-#include <math.h>
+#undef B0
 namespace rnafold{
   extern "C"
   {

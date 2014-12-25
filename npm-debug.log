@@ -2,12 +2,12 @@
 1 verbose cli [ 'node', '/usr/local/bin/npm', 'build', '.' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 info build /Users/HMvanRossum/Documents/Programming/crispr/node_modules/vienna_rna
+4 info build /Users/HMvanRossum/Documents/Programming/vienna_rna
 5 info preinstall vienna_rna@1.0.0
 6 verbose linkStuff [ false,
 6 verbose linkStuff   false,
 6 verbose linkStuff   false,
-6 verbose linkStuff   '/Users/HMvanRossum/Documents/Programming/crispr/node_modules' ]
+6 verbose linkStuff   '/Users/HMvanRossum/Documents/Programming' ]
 7 info linkStuff vienna_rna@1.0.0
 8 verbose linkBins vienna_rna@1.0.0
 9 verbose linkMans vienna_rna@1.0.0
@@ -27,7 +27,7 @@
 15 error There is likely additional logging output above.
 16 error System Darwin 14.0.0
 17 error command "node" "/usr/local/bin/npm" "build" "."
-18 error cwd /Users/HMvanRossum/Documents/Programming/crispr/node_modules/vienna_rna
+18 error cwd /Users/HMvanRossum/Documents/Programming/vienna_rna
 19 error node -v v0.10.32
 20 error npm -v 1.4.28
 21 error code ELIFECYCLE
