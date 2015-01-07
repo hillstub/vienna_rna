@@ -59,7 +59,7 @@ Handle<Value> GetCentroidStruct(const Arguments& args) {
   set_model_details(&md);
   md.noLP           = 1;
   
-  temperature       = 37.;  /* fold at 30C instead of the default 37C */
+  temperature       = 30.;  /* fold at 30C instead of the default 37C */
   kT                = 1.;//(betaScale*((temperature+K0)*GASCONST))/1000.; /* in Kcal */
   pf_scale          = 1.;//exp(-(sfact*min_en)/kT/length);
 
