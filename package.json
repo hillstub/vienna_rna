@@ -2,7 +2,7 @@
     "name": "vienna_rna",
     "version": "1.0.2",
     "main": "./build/Release/vienna_rna",
-    "scripts":{
-    	"install": "cd ./libs/ViennaRNA && chmod -R 777 . && ./configure --disable-openmp && make;cd ../..;node-gyp rebuild"
+    "scripts": {
+        "install": "cd ./libs/ViennaRNA && chmod -R 777 . && ./configure --disable-openmp --without-perl --without-python --disable-lto && make;cd ../..;node-gyp rebuild"
     }
 }
