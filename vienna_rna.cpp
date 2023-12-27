@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <string.h>
 #include <node.h>
-
+#include <cstring>
 
 
 #undef B0
@@ -24,10 +24,18 @@ namespace rnafold{
   }
 }
 
-char *get(v8::Local<v8::Value> value, const char *fallback = "") {
+const char* get(v8::Local<v8::Value> value, const char *fallback = "") {
+  String::Utf8Value value(str);
+  return *value ? *value : *fallback;
+}
+
+
+/*
+char* get(v8::Local<v8::Value> value, const char *fallback = "") {
   if (value->IsString()) {
     v8::String::Utf8Value utf8Value(value);
-    char *str = (char *)malloc(utf8Value.length() + 1);
+    return *
+    /*char *str = (char *)malloc(utf8Value.length() + 1);
     strcpy(str, *utf8Value);
     return str;
   }
@@ -35,6 +43,7 @@ char *get(v8::Local<v8::Value> value, const char *fallback = "") {
   strcpy(str, fallback);
   return str;
 }
+*/
 
 using namespace v8;
 Handle<Value> GetCentroidStruct(const Arguments& args) {
