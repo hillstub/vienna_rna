@@ -26,9 +26,9 @@ namespace rnafold{
 
 char *get(v8::Local<v8::Value> value, const char *fallback = "") {
   if (value->IsString()) {
-    v8::String::AsciiValue string(value);
-    char *str = (char *) malloc(string.length() + 1);
-    strcpy(str, *string);
+    v8::String::Utf8Value utf8Value(value);
+    char *str = (char *)malloc(utf8Value.length() + 1);
+    strcpy(str, *utf8Value);
     return str;
   }
   char *str = (char *) malloc(strlen(fallback) + 1);
