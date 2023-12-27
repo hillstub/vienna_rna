@@ -24,26 +24,13 @@ namespace rnafold{
   }
 }
 
-const char* get(v8::Local<v8::Value> value, const char *fallback = "") {
-  String::Utf8Value value(str);
-  return *value ? *value : *fallback;
+const char* get(v8::Local<v8::Value> input, const char *fallback = "") {
+  String::Utf8Value value(input);
+  char* return_value = value;
+  return *return_value ? *return_value : fallback;
 }
 
 
-/*
-char* get(v8::Local<v8::Value> value, const char *fallback = "") {
-  if (value->IsString()) {
-    v8::String::Utf8Value utf8Value(value);
-    return *
-    /*char *str = (char *)malloc(utf8Value.length() + 1);
-    strcpy(str, *utf8Value);
-    return str;
-  }
-  char *str = (char *) malloc(strlen(fallback) + 1);
-  strcpy(str, fallback);
-  return str;
-}
-*/
 
 using namespace v8;
 Handle<Value> GetCentroidStruct(const Arguments& args) {
